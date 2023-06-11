@@ -11,7 +11,5 @@ export default {
       },
     },
   },
-  plugins: [
-    // require('@headlessui/tailwindcss')({ prefix: 'ui' })
-  ],
+  plugins: [],
 };
