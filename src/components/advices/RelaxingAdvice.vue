@@ -68,7 +68,7 @@
         </ul>
       </div>
 
-      <div class="mt-12 grid grid-cols-2 gap-8">
+      <div class="mt-12 flex flex-col gap-8 md:grid md:grid-cols-2">
         <div class="flex flex-col gap-2">
           <h3 class="text-2xl text-emerald-600">Exercício Físico</h3>
           <p>
