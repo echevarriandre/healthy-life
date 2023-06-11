@@ -6,11 +6,11 @@ const calendlyApi = axios.create({
 
 calendlyApi.interceptors.request.use(
   async (config) => {
-    // const token = localStorage.getItem("calendly_token");
-    // if (token) {
-      config.headers.Authorization = `Bearer eyJraWQiOiIxY2UxZTEzNjE3ZGNmNzY2YjNjZWJjY2Y4ZGM1YmFmYThhNjVlNjg0MDIzZjdjMzJiZTgzNDliMjM4MDEzNWI0IiwidHlwIjoiUEFUIiwiYWxnIjoiRVMyNTYifQ.eyJpc3MiOiJodHRwczovL2F1dGguY2FsZW5kbHkuY29tIiwiaWF0IjoxNjg2NTAwOTcxLCJqdGkiOiJiMjFkNGZmZi1hMWVlLTQwNTktYjc0OS1mM2E2MGE5MGUzNDEiLCJ1c2VyX3V1aWQiOiIyNDJlN2UwOS0wZmIwLTQ0NTctODY3Mi0zNzBjMzE0OGE2MDMifQ.DQmgNBhAvWebARmzZDW3d0GRyRyEpUd0vD34WVTMGN9ULz6yUn4_GvB47b6gcoioq0feClcDOUArDztkVdspkQ`;
-      // return config;
-    // }
+    const token = localStorage.getItem("calendly_token");
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+      return config;
+    }
 
     return config;
   },
