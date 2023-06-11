@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("/recoleta.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  @apply flex h-full w-full flex-col items-center font-rubik;
+}
+
+#app {
+  @apply flex w-full max-w-5xl flex-col justify-center px-4 md:px-10 lg:px-0;
+}
+
+body {
+  @apply bg-[#f6e5ea];
+}
+
+/* Code for Firefox */
+::-moz-selection {
+  @apply bg-teal-500 text-white;
+}
+
+::selection {
+  @apply bg-teal-500 text-white;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
