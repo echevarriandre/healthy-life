@@ -77,3 +77,9 @@ function closeMenu() {
     </div>
   </TransitionRoot>
 </template>
+
+<style scoped lang="postcss">
+.router-link-active {
+  @apply border-pink-600 text-pink-500;
+}
+</style>

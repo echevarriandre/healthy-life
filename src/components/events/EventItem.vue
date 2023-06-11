@@ -42,27 +42,30 @@ function closeModal() {
 
 <template>
   <div class="flex rounded-lg border-2 bg-white py-4 transition duration-300 hover:border-pink-500">
-    <div class="flex flex-col items-center border-r px-8 text-slate-800">
+    <div class="flex flex-col items-center justify-center border-r px-6 text-slate-800 sm:px-8">
       <span class="text-lg capitalize">{{ format(startTime, "EEE") }}</span>
       <span class="text-4xl" :class="today && 'text-pink-500'">{{ format(startTime, "dd") }}</span>
     </div>
 
-    <div class="flex flex-col justify-between px-8 py-1.5 text-slate-800">
+    <div class="flex flex-col justify-center px-6 py-1.5 text-slate-800 sm:px-8">
       <div class="flex items-center gap-2">
-        <TimeIcon class="h-5 w-5 text-gray-400" />
+        <TimeIcon class="h-5 w-5 shrink-0 text-gray-400" />
         <span class="font-light">{{ format(startTime, "HH:mm") }} - {{ format(endTime, "HH:mm") }}</span>
       </div>
       <div class="flex items-center gap-2">
-        <MapIcon class="h-5 w-5 text-gray-400" />
+        <MapIcon class="h-5 w-5 shrink-0 text-gray-400" />
         <span class="font-light">{{ props.event.location.location }}</span>
+      </div>
+      <div class="block py-1.5 sm:hidden">
+        {{ props.event.name }}
       </div>
     </div>
 
-    <div class="py-1.5">
+    <div class="hidden py-1.5 sm:block">
       {{ props.event.name }}
     </div>
 
-    <div class="ml-auto mr-8 flex items-center text-red-400">
+    <div class="ml-auto mr-4 flex items-center text-red-400 sm:mr-8">
       <button class="pointer" @click="openModal" title="Cancelar">
         <TrashIcon class="h-6 w-6 transition duration-200 hover:text-red-500" />
       </button>
