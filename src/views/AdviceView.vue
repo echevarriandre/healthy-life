@@ -58,7 +58,7 @@ import YogaIcon from "../components/icons/YogaIcon.vue";
             class="flex w-52 items-center justify-center gap-4 rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0"
           >
             <FoodIcon class="h-5 w-5" />
-            <span>Comer</span>
+            <span>Alimentação</span>
           </button>
         </Tab>
       </TabList>

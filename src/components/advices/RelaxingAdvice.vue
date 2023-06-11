@@ -68,29 +68,31 @@
         </ul>
       </div>
 
-      <div class="flex flex-col gap-2">
-        <h3 class="text-2xl text-emerald-600">Exercício Físico</h3>
-        <p>
-          Está provado que fazer no mínimo 30 minutos de algum exercício físico por dia traz benefícios para as emoções,
-          assim como é um bom momento para pensar nos problemas e encontrar estratégias para os solucionar. Outra
-          vantagem de praticar exercício físico é a diminuição de cortisol, a hormona que está ligada ao stress, e o
-          aumento de endorfinas no sangue, o que irá provocar bem-estar.
-        </p>
-        <p>
-          Porém, existem exercícios que têm mais efeito para libertar o stress como, por exemplo, fazer caminhadas na
-          rua, correr, andar de bicicleta, natação ou assim. É preferível evitar os desportos ou exercícios de
-          competição quando nos sentimos mais stressados pois os mesmos podem fazer com que fiquemos pior.
-        </p>
-      </div>
+      <div class="mt-12 grid grid-cols-2 gap-8">
+        <div class="flex flex-col gap-2">
+          <h3 class="text-2xl text-emerald-600">Exercício Físico</h3>
+          <p>
+            Está provado que fazer no mínimo 30 minutos de algum exercício físico por dia traz benefícios para as
+            emoções, assim como é um bom momento para pensar nos problemas e encontrar estratégias para os solucionar.
+            Outra vantagem de praticar exercício físico é a diminuição de cortisol, a hormona que está ligada ao stress,
+            e o aumento de endorfinas no sangue, o que irá provocar bem-estar.
+          </p>
+          <p>
+            Porém, existem exercícios que têm mais efeito para libertar o stress como, por exemplo, fazer caminhadas na
+            rua, correr, andar de bicicleta, natação ou assim. É preferível evitar os desportos ou exercícios de
+            competição quando nos sentimos mais stressados pois os mesmos podem fazer com que fiquemos pior.
+          </p>
+        </div>
 
-      <div class="flex flex-col gap-2">
-        <h3 class="text-2xl text-emerald-600">Massagens Relaxantes</h3>
-        <p>
-          Fazer massagens com óleos essenciais de Alfazema, Eucalipto ou Camomila são ótimas para aliviar a tensão
-          muscular assim como para diminuir o stress, devido ao facto destes óleos ajudarem a estimular a circulação
-          sanguínea, renovam energias e promovem o relaxamento dos músculos. O indicado será utilizar óleos essências
-          que possuem propriedades terapêuticas.
-        </p>
+        <div class="flex flex-col gap-2">
+          <h3 class="text-2xl text-emerald-600">Massagens Relaxantes</h3>
+          <p>
+            Fazer massagens com óleos essenciais de Alfazema, Eucalipto ou Camomila são ótimas para aliviar a tensão
+            muscular assim como para diminuir o stress, devido ao facto destes óleos ajudarem a estimular a circulação
+            sanguínea, renovam energias e promovem o relaxamento dos músculos. O indicado será utilizar óleos essências
+            que possuem propriedades terapêuticas.
+          </p>
+        </div>
       </div>
     </div>
   </section>
