@@ -30,7 +30,7 @@ function closeMenu() {
     leave-from="opacity-100"
     leave-to="opacity-0"
   >
-    <div class="fixed inset-0 z-50 flex h-screen w-screen flex-col items-center bg-[#dcd6d1] md:hidden">
+    <div class="fixed inset-0 z-50 flex h-screen w-screen flex-col items-center bg-[#f6e5ea] md:hidden">
       <button class="relative top-12 flex items-center gap-2 uppercase text-[#452712]" @click="emit('close')">
         <LeftIcon class="h-3 w-3" />
         <span>voltar</span>

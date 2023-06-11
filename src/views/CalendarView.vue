@@ -39,7 +39,7 @@ onMounted(() => {
 
 <style lang="postcss">
 #calendly-embed {
-  @apply h-[450px] min-w-[320px] md:h-[720px];
+  @apply h-[650px] min-w-[320px] md:h-[720px];
   background: url(@/assets/loader.svg) center 40% no-repeat;
   background-size: 20% 20%;
 }
