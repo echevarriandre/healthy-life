@@ -6,11 +6,11 @@ const calendlyApi = axios.create({
 
 calendlyApi.interceptors.request.use(
   async (config) => {
-    const token = localStorage.getItem("calendly_token");
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-      return config;
-    }
+    // const token = localStorage.getItem("calendly_token");
+    // if (token) {
+    config.headers.Authorization = `Bearer ${import.meta.env.VITE_CALENDLY_TOKEN}`;
+    //   return config;
+    // }
 
     return config;
   },
