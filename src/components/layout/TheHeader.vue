@@ -1,14 +1,38 @@
 <script setup>
 import LogoIcon from "@/components/icons/LogoIcon.vue";
+import { useScrollLock } from "@vueuse/core";
 import { ref } from "vue";
-import { RouterLink } from "vue-router";
+import { RouterLink, useRoute } from "vue-router";
 import { useAuthStore } from "../../stores/auth";
 import LoginModal from "../auth/LoginModal.vue";
 import MenuIcon from "../icons/MenuIcon.vue";
+import MobileMenu from "./MobileMenu.vue";
 
+const route = useRoute();
 const authStore = useAuthStore();
+const scrollLock = useScrollLock(document.documentElement);
+const scrollLockBody = useScrollLock(document.body);
 
 const isLoginOpen = ref(false);
+const isMenuOpen = ref(false);
+
+function handleMenu() {
+  if (isMenuOpen.value) {
+    isMenuOpen.value = false;
+    scrollLock.value = false;
+    scrollLockBody.value = false;
+    return;
+  }
+
+  isMenuOpen.value = true;
+  scrollLock.value = true;
+  scrollLockBody.value = true;
+}
+
+function handleLogin() {
+  if (route.name === "login") return;
+  isLoginOpen.value = true;
+}
 </script>
 
 <template>
@@ -39,7 +63,7 @@ const isLoginOpen = ref(false);
       </RouterLink>
       <button
         v-if="!authStore.user"
-        @click="isLoginOpen = true"
+        @click="handleLogin"
         class="border-b-2 uppercase text-gray-900 transition-all duration-200 hover:text-pink-500"
       >
         Login
@@ -53,12 +77,14 @@ const isLoginOpen = ref(false);
       </button>
     </nav>
 
-    <button class="text-gray-900 md:hidden">
+    <button @click="handleMenu" class="text-gray-900 md:hidden">
       <MenuIcon class="h-8 w-8" />
     </button>
   </header>
 
   <LoginModal :open="isLoginOpen" @close="isLoginOpen = false" />
+
+  <MobileMenu :open="isMenuOpen" @close="handleMenu" />
 </template>
 
 <style scoped lang="postcss">
