@@ -8,7 +8,7 @@ calendlyStore.getEvents();
 
 <template>
   <main class="mt-10">
-    <section v-if="!fetching && calendlyStore.events?.collection?.length > 0" class="flex flex-col gap-8">
+    <section v-if="!calendlyStore.fetching && calendlyStore.events?.collection?.length > 0" class="flex flex-col gap-8">
       <EventItem v-for="event in calendlyStore.events.collection" :key="event.uri" :event="event" />
     </section>
 

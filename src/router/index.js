@@ -21,6 +21,9 @@ const router = createRouter({
       path: "/eventos",
       name: "events",
       component: EventsView,
+      meta: {
+        requiresAuth: true,
+      },
     },
     {
       path: "/dicas",
@@ -28,6 +31,13 @@ const router = createRouter({
       component: AdviceView,
     },
   ],
+});
+
+router.beforeEach((to) => {
+  const user = localStorage.getItem("user");
+  if (to.meta.requiresAuth && !user) {
+    return { path: "/" };
+  }
 });
 
 export default router;

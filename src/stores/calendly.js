@@ -1,6 +1,6 @@
-import CalendlyService from "@/services/calendly-service";
 import { defineStore } from "pinia";
 import { ref } from "vue";
+import CalendlyService from "../services/calendly-service";
 
 export const useCalendlyStore = defineStore("calendly", () => {
   const events = ref([]);
