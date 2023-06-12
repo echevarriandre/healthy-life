@@ -1,5 +1,4 @@
 <script setup>
-import LogoIcon from "@/components/icons/LogoIcon.vue";
 import { useScrollLock } from "@vueuse/core";
 import { ref } from "vue";
 import { RouterLink, useRoute } from "vue-router";
@@ -38,7 +37,7 @@ function handleLogin() {
 <template>
   <header class="flex w-full items-center justify-between py-10 text-[#d8f5e4]">
     <RouterLink :to="{ name: 'home' }">
-      <LogoIcon class="h-16 w-16" />
+      <img src="../../assets/logo.png" class="h-24 w-24" alt="logo" />
     </RouterLink>
 
     <nav class="hidden md:flex md:gap-12 lg:gap-16">
