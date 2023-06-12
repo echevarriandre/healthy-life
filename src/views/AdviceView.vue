@@ -30,7 +30,7 @@ import YogaIcon from "../components/icons/YogaIcon.vue";
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
             class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <div class="flex w-32 gap-3">
+            <div class="flex w-32 gap-3 md:w-full md:justify-center">
               <YogaIcon class="h-6 w-6 shrink-0" />
               <span>Relaxamento</span>
             </div>
@@ -41,7 +41,7 @@ import YogaIcon from "../components/icons/YogaIcon.vue";
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
             class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <div class="flex w-32 gap-3">
+            <div class="flex w-32 gap-3 md:w-full md:justify-center">
               <SleepIcon class="h-6 w-6 shrink-0" />
               <span>Dormir</span>
             </div>
@@ -52,7 +52,7 @@ import YogaIcon from "../components/icons/YogaIcon.vue";
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
             class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <div class="flex w-32 gap-3">
+            <div class="flex w-32 gap-3 md:w-full md:justify-center">
               <StudyIcon class="h-6 w-6 shrink-0" />
               <span>Estudar</span>
             </div>
@@ -63,7 +63,7 @@ import YogaIcon from "../components/icons/YogaIcon.vue";
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
             class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <div class="flex w-32 gap-3">
+            <div class="flex w-32 gap-3 md:w-full md:justify-center">
               <FoodIcon class="h-5 w-5 shrink-0" />
               <span>Alimentação</span>
             </div>
