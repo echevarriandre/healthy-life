@@ -8,7 +8,7 @@
       assim, reunimos 7 dicas que podem ser utilizadas para estudar melhor, tal como:
     </div>
 
-    <div class="grid grid-cols-2 gap-4">
+    <div class="flex flex-col gap-4 md:grid md:grid-cols-2">
       <div class="flex flex-col gap-4 rounded-lg bg-white p-8">
         <h5 class="text-center font-bold text-emerald-500">Descobrir qual o nosso modo de aprendizagem</h5>
         <div class="flex flex-col gap-2">
