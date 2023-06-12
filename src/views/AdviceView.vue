@@ -28,37 +28,45 @@ import YogaIcon from "../components/icons/YogaIcon.vue";
         <Tab v-slot="{ selected }" as="template">
           <button
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
-            class="flex w-full items-center justify-center gap-4 rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
+            class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <YogaIcon class="h-6 w-6" />
-            <span>Relaxamento</span>
+            <div class="flex w-32 gap-3">
+              <YogaIcon class="h-6 w-6 shrink-0" />
+              <span>Relaxamento</span>
+            </div>
           </button>
         </Tab>
         <Tab v-slot="{ selected }" as="template">
           <button
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
-            class="flex w-full items-center justify-center gap-4 rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
+            class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <SleepIcon class="h-6 w-6" />
-            <span>Dormir</span>
+            <div class="flex w-32 gap-3">
+              <SleepIcon class="h-6 w-6 shrink-0" />
+              <span>Dormir</span>
+            </div>
           </button>
         </Tab>
         <Tab v-slot="{ selected }" as="template">
           <button
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
-            class="flex w-full items-center justify-center gap-4 rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
+            class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <StudyIcon class="h-6 w-6" />
-            <span>Estudar</span>
+            <div class="flex w-32 gap-3">
+              <StudyIcon class="h-6 w-6 shrink-0" />
+              <span>Estudar</span>
+            </div>
           </button>
         </Tab>
         <Tab v-slot="{ selected }" as="template">
           <button
             :class="{ 'bg-white': selected, 'hover:bg-pink-100': !selected }"
-            class="flex w-full items-center justify-center gap-4 rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
+            class="flex w-full justify-center rounded-lg px-8 py-4 transition duration-200 focus-visible:outline-0 md:w-52"
           >
-            <FoodIcon class="h-5 w-5" />
-            <span>Alimentação</span>
+            <div class="flex w-32 gap-3">
+              <FoodIcon class="h-5 w-5 shrink-0" />
+              <span>Alimentação</span>
+            </div>
           </button>
         </Tab>
       </TabList>
